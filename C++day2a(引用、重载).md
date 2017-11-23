@@ -44,13 +44,12 @@ int getTeacher(Teacher **p)//**p 二级指针，是指向指针地址的指针
 	//int *p；
 	//p=(int *)malloc(sizeof(int));
 
-
 	if (tmp == NULL)
 	{
 		return -2;
 	}
+	
 	tmp->age= 33;
-
 
 	//p是实参的地址 *实参的地址  去间接的修改实参的值
 	//*p指的是传入的指针的地址（即 pT1），另其=tmp,即pT1 = tmp;
@@ -96,7 +95,6 @@ void main()
 	cout << "hello  " << endl;
 	system("pause");
 }
-
 ```
 
 #### 常量引用
@@ -208,6 +206,7 @@ void main()
 
      //3.定义一个函数指针  变量
      void (*myVarPFunc)(int a,int b);
+     ```
 
 
      void main()
@@ -215,11 +214,11 @@ void main()
      	myTypeFunc *myfuncp = NULL;  //定义一个函数指针，这个指针指向函数的入口地址
      	
      	myPTypeFunc fp = NULL;//通过函数指针类型 定义了一个函数指针
-     	
-     	
+
+
      }
      ```
-
+    
      ​
 
 ## 视角
